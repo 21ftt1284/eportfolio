@@ -103,11 +103,14 @@
 			color: skyblue;
 			text-decoration-style: bold;
 		}
-		img[alt="The best place"]:hover{
+		img:hover[alt="The best place"]{
 			border-radius: 50%
 		}
-		img[src^="assets/images/id/dancing.gif"], img[src^="assets/images/my/pigeon.gif"], img[src^="assets/images/th/flying.gif"]{
+/* 		img[src^="assets/images/id/dancing.gif"], img[src^="assets/images/my/pigeon.gif"], img[src^="assets/images/th/flying.gif"]{
 			opacity: 30%;
+		} */
+		img:nth-child(odd){
+			opacity:30%;
 		}
 		
 
