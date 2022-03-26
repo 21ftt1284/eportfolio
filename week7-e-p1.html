@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Week 7 ePortfolio part 1</title>
+	<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+table{
+	margin: auto;
+}
+tr>td:nth-child(even){
+	border-left: none;
+}
+tr>td:nth-child(odd){
+	border-right: none;
+}
+h3{
+	text-align: center;
+}
+table.hidden{
+	border: hidden;
+}
+blockquote {
+  font-weight: bold;
+}
+</style>
+</head>
+<body>
+
+
+
+<form method="" action="">
+	<table class="hidden">
+		<tr>
+		<th colspan="2"><h3>Registration for Covid-19 Volunteer - &reg; C19-Team</h3></th>
+	</tr>
+	</table>
+<table cellpadding="10">
+	<tr>
+		<td>Fullname</td>
+		<td><input type="text" id="fullname" name="fullname" maxlength="30"></td>
+	</tr>	
+	<tr>
+		<td>Email</td>
+		<td><input type="email" id="email" name="email"></td>
+	</tr>
+	<tr>
+		<td>Date you can start</td>
+		<td><input type="date" name="date" placeholder="dd-mm-yyyy" value="" min="1990-01-01" max="2050-12-31"></td>
+	</tr>
+	<tr>
+		<td>Morning shift preference</td>
+		<td><input type="time" id="morningshift" name="morningshift" min="23:59" max="00:00"></td>
+	</tr>
+	<tr>
+		<td>Evening shift perference</td>
+		<td><input type="time" id="eveningshift" name="eveningshift" min="23:59" max="00:00"></td>
+	</tr>
+	<tr>
+		<td>How many hours you can work? In multiple of 3</td>
+		<td>
+			<input type="number" id="workhours" name="workhours" min="3" max="9">
+		</td>
+	</tr>
+	<tr>
+		<td>Distance you willing to commute to volunteer center?</td>
+		<td><output>1</output><input type="range" id="distance" name="vol" value="3" min="1" max="15"><output>15</output></td>
+	</tr>
+	<tr>
+		<td>You currency perference for payment?</td>
+		<td>
+			<input type="radio" id="pound" name="currency" value="pound"> &nbsp &pound;
+			<input type="radio" id="yen" name="currency" value="yen"> &nbsp &yen;
+			<input type="radio" id="euro" name="currency" value="euro"> &nbsp &euro;
+		</td>
+	</tr>
+	<tr>
+		<td style="text-align: center" colspan="2">
+			<textarea name="textarea" rows="6" cols="40" placeholder="Type your home address"></textarea>
+		</td>
+	</tr>
+	<tr>
+		<td style="text-align: center" colspan="2"><strike>You will be given daily meals</strike></td>
+	</tr>
+	<tr>
+		<td style="text-align: center" colspan="2"><input type="checkbox" name="termsNconditions" disabled="true" checked="true">I agree to all terms and conditions</td>
+	</tr>
+	<tr>
+		<td style="text-align: center" colspan="2">Prove you are not robot 10 &lt; 20 <input type="checkbox" name="robot"></td>
+	</tr>
+	<tr>
+		<td style="text-align: center" colspan="2"><input type="button" value="Volunteer now!"></td>
+	</tr>
+	<tr>
+		<td style="text-align: center" colspan="2"><input type="button" value="Start Over"></td>
+	</tr>
+	<tr>
+		<td style="text-align: center" colspan="2">For more informaton, visit MOH <a href="https://www.moh.gov.bn/" target="blank">website</a></td>
+	</tr>
+</table>
+</form>
+
+<!-- <p>Denzel Washington once said...</p>
+
+<blockquote>
+	&quot;At the end of the day it’s not about what you have or even what you’ve accomplished… it’s about who you’ve lifted up, who you’ve made better. It’s about what you’ve given back.&quot;
+</blockquote>
+
+<pre>
+	So roses are red, violets are blue
+	It's all in my head, no matter what I do
+	So roses are red, violets are blue
+	It's all in my head, no matter what I do
+</pre> -->
+
+</body>
+</html>
