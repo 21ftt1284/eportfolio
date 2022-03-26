@@ -21,6 +21,9 @@ h3{
 blockquote {
   font-weight: bold;
 }
+.wid{
+	width: 400px;
+}
 tr.nopad>td{
 	padding-top: 3px;
 	padding-bottom: 3px;
@@ -45,37 +48,37 @@ td>input[type="radio"]{
 <form method="" action="">
 <table cellpadding="10">
 	<tr class="nopad">
-		<td>Fullname</td>
+		<td class="wid">Fullname</td>
 		<td><input type="text" id="fullname" name="fullname" maxlength="30"></td>
 	</tr>	
 	<tr class="nopad">
-		<td>Email</td>
+		<td class="wid">Email</td>
 		<td><input type="email" id="email" name="email"></td>
 	</tr>
 	<tr class="nopad">
-		<td>Date you can start</td>
+		<td class="wid">Date you can start</td>
 		<td><input type="date" name="date" placeholder="dd-mm-yyyy" value="" min="1990-01-01" max="2050-12-31"></td>
 	</tr>
 	<tr class="nopad">
-		<td>Morning shift preference</td>
+		<td class="wid">Morning shift preference</td>
 		<td><input type="time" id="morningshift" name="morningshift" min="23:59" max="00:00"></td>
 	</tr>
 	<tr class="nopad">
-		<td>Evening shift perference</td>
+		<td class="wid">Evening shift perference</td>
 		<td><input type="time" id="eveningshift" name="eveningshift" min="23:59" max="00:00"></td>
 	</tr>
 	<tr class="nopad">
-		<td>How many hours you can work? In multiple of 3</td>
+		<td class="wid">How many hours you can work? In multiple of 3</td>
 		<td>
 			<input type="number" id="workhours" name="workhours" min="3" max="9">
 		</td>
 	</tr>
 	<tr>
-		<td>Distance you willing to commute to volunteer center?</td>
+		<td class="wid">Distance you willing to commute to volunteer center?</td>
 		<td><output>1</output><input type="range" id="distance" name="vol" value="3" min="1" max="15"><output>15</output></td>
 	</tr>
 	<tr>
-		<td>You currency perference for payment?</td>
+		<td class="wid">You currency perference for payment?</td>
 		<td>
 			<input type="radio" id="pound" name="currency" value="pound">&pound;
 			<input type="radio" id="yen" name="currency" value="yen">&yen;
