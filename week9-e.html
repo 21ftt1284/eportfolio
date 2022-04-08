@@ -23,7 +23,7 @@
     8. PSEUDO CLASS SELECTOR
 
     FAILURE TO COMPLY WILL RESULTS IN MARK DEDUCTION*/
-        
+        /* default */
         .main{
               display: grid;  
               grid-template-columns: 100%;     
@@ -46,6 +46,7 @@
           .submain>div:nth-child(2){         /*quote*/
               background-color: skyblue;
           }
+    
         /*tablet*/  
     @media screen and (min-width:700px) and (max-width: 800px) {    
            .main{
@@ -79,11 +80,6 @@
               background-color: skyblue;
           }
     }
-        /*mobile*/
-/*    @media screen and (max-width:700px) {    
-           
-    }*/
-
            /*desktop*/
     @media screen and (min-width:800px) {    
            .main{
