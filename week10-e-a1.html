@@ -482,7 +482,7 @@
       var relevant1grade1 = document.getElementById("relevant1grade").value;
       var age1 = document.getElementById("adult").value;
       document.getElementById("status").innerHTML= "";
-      if(mathsgrade1 == "0" || relevant1grade1 == "0"){
+      if( age1 == "under25" && (mathsgrade1 == "0" || relevant1grade1 == "0")){
         document.getElementById("status").innerHTML= "You did not specify all subjects!";
         document.getElementById("status").style.color = "red";
       }
