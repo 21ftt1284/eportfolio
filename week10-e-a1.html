@@ -156,30 +156,7 @@
         }
 
 
-    function display(){
-    var hidden1 =document.getElementsByClassName("hideall")
-    var age = document.getElementById("adult").value;
-    var matured = document.getElementsByClassName("matured");
-    if(age == "under25"){
-      for (var i = 0; i < hidden1.length; i++) {
-          hidden1[i].style.display = "block";
-        }
-    }
-    if( age == "over25"){
-      for (var i = 0; i < hidden1.length; i++) {
-          hidden1[i].style.display = "none";
-        }
-      for (var i = 0; i < matured.length; i++) {
-          matured[i].style.display = "block";
-        }
-    }
-    if(age == "0"){
-      for (var i = 0; i < hidden.length; i++) {
-          hidden[i].style.display = "none";
-        }
-    }
-
-    }
+    
 
     var engolevel = document.getElementById("engolevel");
     var engigcse = document.getElementById("engigcse");
@@ -360,14 +337,51 @@
       }
     }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     //disabled options if maths D
     function checkMath(){
       document.getElementById("relevant1").options[3].disabled = false;
+
       if(maths.value == "mathematics D"){
         var relevantOp = document.getElementById("relevant1").options[3];
         relevantOp.disabled = true;
       }
     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
     //points for maths
@@ -486,6 +500,10 @@
         document.getElementById("status").innerHTML= "You did not specify all subjects!";
         document.getElementById("status").style.color = "red";
       }
+      else if( age1 == "over25" && mathsgrade1 == "0"){
+        document.getElementById("status").innerHTML= "You did not specify all subjects!";
+        document.getElementById("status").style.color = "red";
+      }
       else if( age1 == "under25" && totalP <= 18){
         document.getElementById("totalpoints").innerHTML = totalP;
         document.getElementById("status").innerHTML= "Eligible";
@@ -506,6 +524,53 @@
         document.getElementById("status").innerHTML= "Not Eligible due to points exceed 12";
         document.getElementById("status").style.color = "red";
       }
+    }
+
+    function display(){
+    var hidden1 =document.getElementsByClassName("hideall")
+    var age = document.getElementById("adult").value;
+    var matured = document.getElementsByClassName("matured");
+    if(age == "under25"){
+      for (var i = 0; i < hidden1.length; i++) {
+          hidden1[i].style.display = "block";
+        }
+      document.getElementById("mathsgrade").options[0].selected = true;
+      eP1 = 0;
+      eP2 = 0
+      document.getElementById("mathspoints").innerHTML = " ";
+      document.getElementById("relevant1grade").options[0].selected = true;
+      document.getElementById("relevant1points").innerHTML = " ";
+        document.getElementById("totalpoints").innerHTML = " ";
+        document.getElementById("status").innerHTML=" ";
+
+
+
+    }
+    if( age == "over25"){
+      for (var i = 0; i < hidden1.length; i++) {
+          hidden1[i].style.display = "none";
+        }
+      for (var i = 0; i < matured.length; i++) {
+          matured[i].style.display = "block";
+        }
+      document.getElementById("mathsgrade").options[0].selected = true;
+      eP1 = 0;
+      eP2 = 0;
+      document.getElementById("mathspoints").innerHTML = " ";
+      document.getElementById("relevant1grade").options[0].selected = true;
+      document.getElementById("relevant1points").innerHTML = " ";
+      document.getElementById("totalpoints").innerHTML = " ";
+      document.getElementById("status").innerHTML= " ";
+
+
+
+    }
+    if(age == "0"){
+      for (var i = 0; i < hidden.length; i++) {
+          hidden[i].style.display = "none";
+        }
+    }
+
     }
 
 
